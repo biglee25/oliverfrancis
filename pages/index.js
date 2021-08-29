@@ -1,23 +1,30 @@
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
+import Nav from '../components/Nav'
+import Hero from '../components/Hero'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/graphcms'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import About from 'favicon/About'
 
-export default function Index({ posts, preview }) {
+
+
+export default function Index({ posts, preview}) {
   const heroPost = posts[0]
   const morePosts = posts.slice(1)
   return (
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>{CMS_NAME}</title>
         </Head>
         <Container>
-          <Intro />
+          <Nav />
+          <Hero/>
+          <About />
+
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -41,3 +48,4 @@ export async function getStaticProps({ preview = false }) {
     props: { posts, preview },
   }
 }
+
