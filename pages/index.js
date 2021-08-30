@@ -1,13 +1,12 @@
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
-import Nav from '../components/Nav'
 import Hero from '../components/Hero'
+import About from '../components/About'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/graphcms'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
-import About from 'favicon/About'
 
 
 
@@ -20,11 +19,12 @@ export default function Index({ posts, preview}) {
         <Head>
           <title>{CMS_NAME}</title>
         </Head>
+        <Hero />
         <Container>
-          <Nav />
-          <Hero/>
           <About />
-
+          <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12">
+            Our Latest Project
+          </h2>
           {heroPost && (
             <HeroPost
               title={heroPost.title}
