@@ -10,19 +10,21 @@ import { CMS_NAME } from '../lib/constants'
 
 
 
-export default function Index({ posts, preview}) {
+export default function Index({ posts }) {
   const heroPost = posts[0]
   const morePosts = posts.slice(1)
   return (
     <>
-      <Layout preview={preview}>
+      <Layout>
         <Head>
           <title>{CMS_NAME}</title>
         </Head>
         <Hero />
         <Container>
           <About />
-          <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12 text-center">
+          <div id="projects" />
+
+          <h2 className="md:mt-56 mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12 text-center">
             Our Latest Project
           </h2>
           {heroPost && (

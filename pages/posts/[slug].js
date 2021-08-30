@@ -3,7 +3,6 @@ import ErrorPage from 'next/error'
 import Container from 'components/container'
 import PostBody from 'components/post-body'
 import MoreStories from 'components/more-stories'
-import Header from 'components/header'
 import PostHeader from 'components/post-header'
 import Layout from 'components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from 'lib/graphcms'
@@ -19,9 +18,8 @@ export default function Post({ post, morePosts, preview }) {
   }
 
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Container>
-        <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
