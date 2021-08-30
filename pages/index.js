@@ -22,7 +22,7 @@ export default function Index({ posts, preview}) {
         <Hero />
         <Container>
           <About />
-          <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12">
+          <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12 text-center">
             Our Latest Project
           </h2>
           {heroPost && (

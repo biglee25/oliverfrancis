@@ -10,7 +10,7 @@ export default function Hero() {
                     <h1 className="font-bold text-6xl my-4">Bespoke Interior Design at a cost to suit you.</h1>
                     <p className="leading-normal mb-12">We offer a wide range of bespoke services to transform your home.</p>
                     <Link href="/about">
-                      <button className="bg-red-600 hover:bg-gray-900 text-white py-6 px-12 md:px-24">Find out more</button>
+                      <button className="bg-orange hover:bg-gray-900 hover:shadow-lg transition-all duration-500 text-white py-6 px-12 md:px-24">Find out more</button>
                     </Link>
                 </div>
             </div>

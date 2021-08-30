@@ -8,26 +8,27 @@ export default function HeroPost({
   date,
   excerpt,
   slug,
-}) {
+})
+{
   return (
-    <section>
-      <div className="mb-8 md:mb-16">
+    <section id="projects">
         <CoverImage slug={slug} title={title} url={coverImage.url} />
-      </div>
-      <div className="mb-20 md:grid md:grid-cols-1 md:col-gap-16 lg:col-gap-8 md:mb-28">
+      <div className="mb-20 md:grid md:grid-cols-1 md:col-gap-16 lg:col-gap-8 md:mb-28 bg-gray-100 p-4 text-center font-extrabold">
         <div>
-          <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
-            <Link href={`/posts/${slug}`}>
-              <a className="hover:underline">{title}</a>
-            </Link>
+          <h3 className="mb-3 text-3xl leading-snug">
+              {title}
           </h3>
-          <div className="mb-4 text-lg md:mb-0">
+          <div className="mb-4 text-lg font-bold">
             <Date dateString={date} />
           </div>
         </div>
         <div>
-          <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
+          <p className="mb-4 text-lg leading-relaxed font-normal">{excerpt}</p>
         </div>
+        <Link href={`/posts/${slug}`}>
+            <button className="bg-orange hover:bg-black transition-all duration-500 py-4 w-full text-white">Explore</button>
+          </Link>
+
       </div>
     </section>
   )

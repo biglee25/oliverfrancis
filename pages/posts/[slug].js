@@ -5,7 +5,6 @@ import PostBody from 'components/post-body'
 import MoreStories from 'components/more-stories'
 import Header from 'components/header'
 import PostHeader from 'components/post-header'
-import SectionSeparator from 'components/section-separator'
 import Layout from 'components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from 'lib/graphcms'
 import PostTitle from 'components/post-title'
@@ -30,9 +29,8 @@ export default function Post({ post, morePosts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | {CMS_NAME}
                 </title>
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
               </Head>
               <PostHeader
                 title={post.title}
@@ -40,8 +38,30 @@ export default function Post({ post, morePosts, preview }) {
                 date={post.date}
               />
               <PostBody content={post.content} />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-12">
+                <img
+                src={post.image1?.url}
+                width={post.image1?.width}
+                height={post.image1?.height}
+              />
+              <img
+                src={post.image2?.url}
+                width={post.image2?.width}
+                height={post.image2?.height}
+              />
+              <img
+                src={post.image3?.url}
+                width={post.image3?.width}
+                height={post.image3?.height}
+              />
+              <img
+                src={post.image4?.url}
+                width={post.image4?.width}
+                height={post.image4?.height}
+              />
+            </div>
+
             </article>
-            <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}

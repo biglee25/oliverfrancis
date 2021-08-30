@@ -3,10 +3,10 @@ import PostPreview from '../components/post-preview'
 export default function MoreStories({ posts }) {
   return (
     <section>
-      <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12">
+      <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12 text-center">
         More Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-32">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
