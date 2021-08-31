@@ -10,9 +10,9 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div className="shadow-lg">
+    <div className="shadow-lg bg-gray-200 flex flex-col items-around">
         <CoverImage slug={slug} title={title} url={coverImage.url} />
-      <div className="bg-gray-200 p-4 text-center font-extrabold">
+      <div className=" p-4 text-center font-extrabold">
         <h3 className="mb-3 text-3xl leading-snug">{title}</h3>
         <div className="mb-4 text-lg font-bold">
           <Date dateString={date} />

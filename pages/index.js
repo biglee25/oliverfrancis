@@ -7,6 +7,7 @@ import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/graphcms'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import Card from 'components/Card'
 
 
 
@@ -22,9 +23,8 @@ export default function Index({ posts }) {
         <Hero />
         <Container>
           <About />
-          <div id="projects" />
-
-          <h2 className="md:mt-56 mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12 text-center">
+          <Card />
+          <h2 className="md:mt-56 mb-8 text-4xl font-bold tracking-tighter leading-tight bg-gray-900 text-white px-4 py-12 text-center" id="projects">
             Our Latest Project
           </h2>
           {heroPost && (

@@ -4,7 +4,22 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
-* {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+.background {
+  position: relative;
+}
+
+.background::before {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+  content: '';
+  background: #f2f2f2;
+  width: 70%;
+  height: 130%;
+}
+
+@media (max-width: 768px) {
+  .background::before {
+    display: none;
+  }
 }
