@@ -7,7 +7,7 @@ export default function Card() {
     <div className="text-center md:mt-36">
       <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4">Our Services</h2>
     </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12 py-4 text-center lg:w-3/4 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12 text-center lg:w-3/4 mx-auto">
       <div className="shadow-lg">
             <div className="flex flex-col justify-center p-4 md:p-12 bg-gray-900 text-white">
             <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
