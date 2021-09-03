@@ -1,6 +1,8 @@
 import { MdKitchen } from "react-icons/md";
 import { FaBath } from 'react-icons/fa';
 
+import Link from 'next/link'
+
 export default function Card() {
   return (
     <>
@@ -13,6 +15,9 @@ export default function Card() {
             <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                 <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none mb-4">Kitchens</h2>
                 <p className="py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <Link href="/services#kitchens">
+            <button className="bg-white hover:bg-orange transition-all duration-500 py-4 w-full md:w-56 mx-auto text-black hover:text-white">Find out More</button>
+          </Link>
             </div>
           </div>
           <div className="shadow-lg">
@@ -20,6 +25,9 @@ export default function Card() {
             <FaBath size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                 <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none mb-4">Bathrooms</h2>
                 <p className="py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <Link href="/services#bathrooms">
+            <button className="bg-white hover:bg-orange transition-all duration-500 py-4 w-full md:w-56 mx-auto text-black hover:text-white">Find out More</button>
+          </Link>
             </div>
           </div>
         </div>

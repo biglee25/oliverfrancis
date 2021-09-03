@@ -4,12 +4,11 @@ import Container from 'components/container'
 import PostBody from 'components/post-body'
 import Projects from 'components/projects'
 import PostHeader from 'components/post-header'
-import Layout from 'components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from 'lib/graphcms'
 import PostTitle from 'components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from 'lib/constants'
-import NavHome from 'components/NavHome'
+import NavbarHome from 'components/NavbarHome'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -19,8 +18,8 @@ export default function Post({ post, morePosts, preview }) {
   }
 
   return (
-    <Layout>
-      <NavHome />
+    <>
+      <NavbarHome />
       <Container>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -32,7 +31,7 @@ export default function Post({ post, morePosts, preview }) {
                   {post.title} | {CMS_NAME}
                 </title>
               </Head>
-              <div className="mt-28 md:mt-32">
+              <div className="mt-32 md:mt-40">
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
@@ -68,7 +67,7 @@ export default function Post({ post, morePosts, preview }) {
           </>
         )}
       </Container>
-    </Layout>
+    </>
   )
 }
 

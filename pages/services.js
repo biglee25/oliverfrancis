@@ -20,11 +20,10 @@ export default function Index({ posts }) {
         <Head>
           <title>{CMS_NAME}</title>
         </Head>
-        <Hero />
         <Container>
-          <About />
-          <Card />          
+          <div className="pt-36 md:pt-8 lg:pt-16">
           {morePosts.length > 0 && <Projects posts={morePosts} />}
+          </div>
         </Container>
       </Layout>
     </>
