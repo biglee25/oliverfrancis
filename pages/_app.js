@@ -1,18 +1,18 @@
 import '../styles/index.css'
+
+import Navbar from 'components/Navbar'
 import Footer from '../components/footer'
 
 
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
 
   
   return (
     <>
-    <div id="home" />
-    <Component {...pageProps} />
+    <Navbar />
+      <Component {...pageProps} />
     <Footer />
     </>
   ) 
 }
-
-export default MyApp

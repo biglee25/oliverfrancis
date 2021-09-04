@@ -1,6 +1,5 @@
 import Container from '../components/container'
 import Projects from '../components/projects'
-import Navbar from 'components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Layout from '../components/layout'
@@ -15,12 +14,11 @@ export default function Index({ posts }) {
   const morePosts = posts.slice(0)
   return (
     <>
-    <Navbar />
-      <Layout>
         <Head>
           <title>{CMS_NAME}</title>
         </Head>
         <Hero />
+        <Layout>
         <Container>
           <About />
           <Card />          
