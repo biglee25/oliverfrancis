@@ -2,7 +2,7 @@ import { useState} from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
-
+import logo from "../public/images/Oliver-Francis-Logo.svg"
 import Hamburger from 'hamburger-react'
 
 
@@ -19,10 +19,11 @@ export default function Navbar({ fixed }) {
               <Link href="/" as="/#home">
                 <a>
                 <Image
-                  src="/images/oliver-Francis-Logo.svg"
+                  src={logo}
                   alt="Oliver Francis Interiors"
                   width={150}
                   height={100}
+                  layout="fixed"
                 />
                 </a>
               </Link>
@@ -36,11 +37,6 @@ export default function Navbar({ fixed }) {
                 <li>
                   <a className="px-3 py-2 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out active:bg-black" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
                   <Link href="/" className="text-white hover:bg-orange px-4 py-2 transition-all duration-500">Home</Link>
-                  </a>
-                </li>
-                <li>
-                  <a className="px-3 py-2 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out active:bg-black" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
-                  <Link href="/#about" className="text-white hover:bg-orange px-4 py-2 transition-all duration-500">About</Link>
                   </a>
                 </li>
                 <li>

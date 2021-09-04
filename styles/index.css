@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 768px) {
-  .background::before {
+  .background-left::before {
     display: none;
   }
 }
@@ -41,7 +41,7 @@
 }
 
 @media (max-width: 768px) {
-  .background::before {
+  .background-right::before {
     display: none;
   }
 }
