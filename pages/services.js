@@ -44,7 +44,6 @@ export async function getStaticProps() {
   };
 }
 
-
 export default function ({ page }) {
   return (
     <Layout>
