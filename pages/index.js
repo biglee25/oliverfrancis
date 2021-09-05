@@ -105,7 +105,7 @@ export default function Index({ page }) {
                   <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                     <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle1}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent1.html }} className="py-4" />
-                    <Link href="/services#kitchens">
+                    <Link href="/services">
                       <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4">Find out More</button>
                     </Link>
                 </div>
@@ -113,7 +113,7 @@ export default function Index({ page }) {
                   <FaBath size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                     <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle2}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent2.html }} className="py-4" />
-                    <Link href="/services#bathrooms">
+                    <Link href="/services">
                       <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4">Find out More</button>
                     </Link>
                 </div>
