@@ -16,7 +16,7 @@ export default function Navbar({ fixed }) {
         <nav expanded={expanded} className="fixed top-0 w-full h-auto flex flex-wrap items-center justify-between p-2 bg-black z-50 shadow-md">
           <div className="container px-2 mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-              <Link href="/" as="/#home">
+              <Link href="/">
                 <a>
                 <Image
                   src={logo}
@@ -51,7 +51,7 @@ export default function Navbar({ fixed }) {
                 </li>
                 <li>
                   <a className="px-3 py-2 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
-                  <Link href="/" className="text-white hover:bg-orange px-4 py-2 transition-all duration-500">Contact</Link>
+                  <Link href="/contact" className="text-white hover:bg-orange px-4 py-2 transition-all duration-500">Contact</Link>
                   </a>
                 </li>
               </ul>

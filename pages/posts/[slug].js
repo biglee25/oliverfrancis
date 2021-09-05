@@ -8,7 +8,6 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from 'lib/graphcms'
 import PostTitle from 'components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from 'lib/constants'
-import NavbarHome from 'components/NavbarHome'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -19,7 +18,6 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <>
-      <NavbarHome />
       <Container>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -31,13 +29,11 @@ export default function Post({ post, morePosts, preview }) {
                   {post.title} | {CMS_NAME}
                 </title>
               </Head>
-              <div className="mt-32 md:mt-40">
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
               />
-              </div>
               <PostBody content={post.content} />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-12">
                 <img

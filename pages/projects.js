@@ -1,6 +1,5 @@
 import Container from '../components/container'
 import Projects from '../components/projects'
-import Navbar from 'components/Navbar'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/graphcms'
 import Head from 'next/head'
@@ -17,7 +16,7 @@ export default function Index({ posts }) {
         </Head>
         <Layout>
         <Container>
-          <div className="pt-36 md:pt-8 lg:pt-16">
+          <div className="pt-8 md:pt-8 lg:pt-16">
           {morePosts.length > 0 && <Projects posts={morePosts} />}
           </div>
         </Container>
