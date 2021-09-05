@@ -47,7 +47,7 @@ export default function Card({ page, children }) {
               <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                 <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none mb-4">{page.title1}</h2>
                 <div dangerouslySetInnerHTML={{ __html: page.content1.html }} className="py-4" />
-                <Link href="/services#kitchens">
+                <Link href="/services">
                   <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto">Find out More</button>
                 </Link>
             </div>
@@ -55,7 +55,7 @@ export default function Card({ page, children }) {
               <FaBath size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                 <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none mb-4">{page.title2}</h2>
                   <div dangerouslySetInnerHTML={{ __html: page.content2.html }} className="py-4" />
-                  <Link href="/services#bathrooms">
+                  <Link href="/services">
                   <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto">Find out More</button>
                 </Link>
             </div>
