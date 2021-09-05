@@ -8,7 +8,7 @@ import { FaBath } from 'react-icons/fa';
 
 import Link from 'next/link'
 
-import Form from '../components/form'
+import Form from '../components/Form'
 
 
 import { GraphQLClient } from 'graphql-request';

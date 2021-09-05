@@ -1,5 +1,5 @@
 import Container from '../components/container'
-import Form from '../components/form'
+import Form from '../components/Form'
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
