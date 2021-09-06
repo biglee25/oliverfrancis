@@ -72,7 +72,7 @@ export default function Index({ page }) {
                     <h1 className="font-bold leading-snug text-4xl md:text-6xl lg:text-8xl my-4 md:w-3/4 tracking-tight">{page.heroTitle}</h1>
                     <p className="mb-8 md:w-1/2">{page.heroSubtitle}</p>
                     <Link href="/contact">
-                      <button className="bg-red-200 hover:bg-gray-900 shadow-lg transition-all duration-500 text-white py-4 w-full md:w-96 px-12 md:px-24">Contact us Today</button>
+                      <button className="bg-orange hover:bg-gray-900 shadow-lg transition-all duration-500 text-white py-4 w-full md:w-96 px-12 md:px-24">Contact us Today</button>
                     </Link>
                 </div>
             </div>
