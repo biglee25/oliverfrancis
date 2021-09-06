@@ -1,5 +1,8 @@
 import { GraphQLClient } from 'graphql-request';
 
+import { CMS_NAME } from '../lib/constants'
+import Head from 'next/head'
+
 import Layout from '../components/layout';
 import Container from '../components/container';
 import Image from 'next/image'
@@ -47,6 +50,13 @@ export async function getStaticProps() {
 
 export default function ({ page }) {
   return (
+    <>
+    <Head>
+    <title>{CMS_NAME} - Services</title>
+      <meta charset="UTF-8"></meta>
+      <meta name="description" content="Oliver Francis Interiors are your local kitchen company in Glossop, specialising in kitchen and bathroom design and installation. Call the team today to discuss your ideas."></meta>
+      <meta name="keywords" content="Kitchens, Bathrooms, Fitters, Suppliers, Bespoke"></meta>
+    </Head>
     <Layout>
       <Container>
         <div className="my-12 md:my-24 lg:my-80">
@@ -98,5 +108,6 @@ export default function ({ page }) {
         </div>
       </Container>
     </Layout>
+    </>
   )
 }

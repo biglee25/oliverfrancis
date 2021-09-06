@@ -59,7 +59,10 @@ export default function Index({ page }) {
   return (
     <>
         <Head>
-          <title>{CMS_NAME}</title>
+          <title>{CMS_NAME} - Home</title>
+          <meta charset="UTF-8"></meta>
+          <meta name="description" content="Oliver Francis Interiors are your local kitchen company in Glossop, specialising in kitchen and bathroom design and installation. Call the team today to discuss your ideas."></meta>
+          <meta name="keywords" content="Kitchens, Bathrooms, Fitters, Suppliers, Bespoke"></meta>
         </Head>
         <section className="mx-auto w-full">
         <div className="bg-hero-bg bg-cover bg-top mb-12">
