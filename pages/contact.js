@@ -31,14 +31,14 @@ export default function Contact() {
                         </div>
                         <div className="text-center order-1 md:order-2">
                             <div className="shadow-lg py-16 my-4 rounded-md bg-gray-800 text-white">
-                                <h2 className="text-2xl font-bold pb-8">You can contact us by phone</h2>
+                                <h2 className="text-2xl font-bold pb-8">Contact us by phone</h2>
                                 <FaPhoneSquare size="4rem" className="mx-auto mb-4 md:mb-8 text-orange" />
-                                <a href="tel:01457 511987" className="text-2xl font-bold">01457 511987</a> 
+                                <a href="tel:01457 511987" className="font-bold">01457 511987</a> 
                             </div>
                             <div className="shadow-lg py-16 my-4 rounded-md bg-gray-800 text-white">
-                                <h2 className="text-2xl font-bold pb-8">You can contact us by Email</h2>
+                                <h2 className="text-2xl font-bold pb-8">Contact us by email</h2>
                                 <MdEmail size="4rem" className="mx-auto mb-4 md:mb-8 text-orange" />
-                                <a href="mailto:sales@oliverfrancisinteriors.co.uk"className="text-2xl font-bold">sales@oliverfrancisinteriors.co.uk</a>
+                                <a href="mailto:sales@oliverfrancisinteriors.co.uk"className="font-bold">sales@oliverfrancisinteriors.co.uk</a>
                             </div>
                         </div>
                     </div>
