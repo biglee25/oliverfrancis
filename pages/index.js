@@ -78,7 +78,7 @@ export default function Index({ page }) {
             </div>
           </div>
         </div>
-    </section>
+        </section>
         <Layout>
           <Container>
             <div className="background-left my-4">
@@ -123,13 +123,13 @@ export default function Index({ page }) {
             </div>
           </Container>
           <Container>
-          <div className="text-center md:mt-36">
-              <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none pb-12">Contact us</h2>
-              <p className="w-full md:w-1/2 mx-auto pb-12">If you would like any advice or just a friendly chat, please fill in the form below and we will get back to you as soon as we can.</p>
-          </div>
-          <div className="w-full md:w-1/2 mx-auto">
-            <Form />
-          </div>
+            <div className="text-center md:mt-36">
+                <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none pb-12">Contact us</h2>
+                <p className="w-full md:w-1/2 mx-auto pb-12">If you would like any advice or just a friendly chat, please fill in the form below and we will get back to you as soon as we can.</p>
+            </div>
+            <div className="w-full md:w-1/2 mx-auto">
+              <Form />
+            </div>
           </Container>
         </Layout>
     </>

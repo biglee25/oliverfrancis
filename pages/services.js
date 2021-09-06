@@ -71,13 +71,13 @@ export default function ({ page }) {
                   <button className="bg-orange hover:bg-black text-white hover:text-white transition-all duration-500 py-4 w-full md:w-56">View our Projects</button>
                 </Link>
               </div>
-                <Image
-                  src={page.image1.url}
-                  width="100%"
-                  height="100%"
-                  layout="responsive"
-                  className="shadow-lg"
-                />
+              <Image
+                src={page.image1.url}
+                width="100%"
+                height="100%"
+                layout="responsive"
+                className="shadow-lg"
+              />
             </div>
           </div>
         </div>

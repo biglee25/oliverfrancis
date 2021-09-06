@@ -19,12 +19,12 @@ export default function Index({ posts }) {
           <meta name="keywords" content="Kitchens, Bathrooms, Fitters, Suppliers, Bespoke, Projects"></meta>
         </Head>
         <Layout>
-        <Container>
-          <div className="pt-8 md:pt-8 lg:pt-16">
-          {morePosts.length > 0 && <Projects posts={morePosts} />}
-          </div>
-        </Container>
-      </Layout>
+          <Container>
+            <div className="pt-8 md:pt-8 lg:pt-16">
+            {morePosts.length > 0 && <Projects posts={morePosts} />}
+            </div>
+          </Container>
+        </Layout>
       </>
   )
 }
