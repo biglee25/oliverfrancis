@@ -13,7 +13,7 @@ export default function Navbar({ fixed }) {
 
     return (
       <>
-        <nav expanded={expanded} className="fixed top-0 w-full h-auto flex flex-wrap items-center justify-between p-2 bg-black z-50 shadow-md">
+        <nav expanded={expanded} className="fixed top-0 w-full h-auto flex flex-wrap items-center justify-between p-2 bg-gray-700 z-50 shadow-md">
           <div className="container px-2 mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
               <Link href="/">

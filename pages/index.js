@@ -69,7 +69,7 @@ export default function Index({ page }) {
           <div className="bg-black bg-opacity-30">
             <div className="container mx-auto">  
                 <div className="w-full h-screen flex flex-col justify-center items-center px-6 text-white text-center drop-shadow-2xl">
-                    <h1 className="font-bold leading-snug text-4xl md:text-6xl lg:text-8xl my-4 md:w-3/4 tracking-tight">{page.heroTitle}</h1>
+                    <h1 className="font-bold leading-snug text-4xl md:text-5xl lg:text-8xl my-4 md:w-3/4 tracking-tight">{page.heroTitle}</h1>
                     <p className="mb-8 md:w-1/2">{page.heroSubtitle}</p>
                     <Link href="/contact">
                       <button className="bg-orange hover:bg-gray-900 shadow-lg transition-all duration-500 text-white py-4 w-full md:w-96 px-12 md:px-24">Contact us Today</button>
@@ -104,7 +104,7 @@ export default function Index({ page }) {
               <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4">Our Services</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 text-center lg:w-3/4 mx-auto">
-                <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-900 text-white">
+                <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-700 text-white">
                   <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                     <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle1}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent1.html }} className="py-4" />
@@ -112,7 +112,7 @@ export default function Index({ page }) {
                       <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4">Find out More</button>
                     </Link>
                 </div>
-                <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-900 text-white shadow-lg">
+                <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-700 text-white shadow-lg">
                   <FaBath size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                     <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle2}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent2.html }} className="py-4" />
@@ -120,15 +120,6 @@ export default function Index({ page }) {
                       <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4">Find out More</button>
                     </Link>
                 </div>
-            </div>
-          </Container>
-          <Container>
-            <div className="text-center md:mt-36">
-                <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none pb-12">Contact us</h2>
-                <p className="w-full md:w-1/2 mx-auto pb-12">If you would like any advice or just a friendly chat, please fill in the form below and we will get back to you as soon as we can.</p>
-            </div>
-            <div className="w-full md:w-1/2 mx-auto">
-              <Form />
             </div>
           </Container>
         </Layout>
