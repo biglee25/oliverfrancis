@@ -79,7 +79,6 @@ export default function Index({ page }) {
           </div>
         </div>
         </section>
-        <Layout>
           <Container>
             <div className="background-left my-4">
               <div className="grid grid-cols-1 md:grid-cols-2 my-12 md:mt-56">
@@ -90,12 +89,13 @@ export default function Index({ page }) {
                       <button className="bg-orange text-white hover:bg-black hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8">Our Services</button>
                     </Link>
                   </div>            
-                  <div className="shadow-lg">
+                  <div>
                     <Image
                       src={page.image1.url}
                       width="100%"
                       height="100%"
                       layout="responsive"
+                      className="shadow-lg"
                     />
                   </div>
                 </div>
@@ -122,7 +122,6 @@ export default function Index({ page }) {
                 </div>
             </div>
           </Container>
-        </Layout>
     </>
   )
 }
