@@ -86,12 +86,13 @@ export default function ({ page }) {
       <div className="my-12 md:my-24 lg:my-80">
         <div className="background-right">
           <div className="grid grid-cols-1 md:grid-cols-2 my-12 md:mt-56">
-            <div className="shadow-lg order-2 md:order-1">
+            <div className="order-2 md:order-1">
               <Image
                 src={page.image2.url}
                 width="100%"
                 height="100%"
                 layout="responsive"
+                className="shadow-lg"
               />
             </div>
             <div className="flex flex-col justify-center pb-12 md:px-12 order-1 md:order-2">
