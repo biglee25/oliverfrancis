@@ -69,7 +69,7 @@ export default function Index({ page }) {
           <div className="bg-black bg-opacity-30">
             <div className="container mx-auto">  
                 <div className="w-full h-screen flex flex-col justify-center items-center px-6 text-white text-center drop-shadow-2xl">
-                    <h1 className="font-bold leading-snug text-4xl md:text-5xl lg:text-8xl my-4 md:w-3/4 tracking-tight">{page.heroTitle}</h1>
+                    <h1 className="font-bold leading-snug text-4xl md:text-5xl lg:text-7xl my-4 md:w-3/4 tracking-tight">{page.heroTitle}</h1>
                     <p className="mb-8 md:w-1/2">{page.heroSubtitle}</p>
                     <Link href="/contact">
                       <button className="bg-orange hover:bg-gray-900 shadow-lg transition-all duration-500 text-white py-4 w-full md:w-96 px-12 md:px-24">Contact us Today</button>
