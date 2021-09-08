@@ -4,7 +4,7 @@ export default function Projects({ posts }) {
   return (
     <>
     <div className="text-center mb-12">
-      <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4">Our Projects</h2>
+      <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4 text-gray-800">Our Projects</h2>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-32">
       {posts.map((post) => (

@@ -14,15 +14,15 @@ export default class MyForm extends React.Component {
     const { status } = this.state
     return (
             <div>
-                <form onSubmit={this.submitForm} action="https://formspree.io/xgennqrz" method="POST">
+                <form onSubmit={this.submitForm} action="https://formspree.io/f/mleaavnj" method="POST">
                         <input type="name" name="name" placeholder="Name" className="w-full border-b-2 border-gray-300 p-4 mb-12" />
                         <input type="phone" name="phone" placeholder="Phone" className="w-full border-b-2 border-gray-300 p-4 mb-12" />
                         <input type="email" name="email" placeholder="Email" className="w-full border-b-2 border-gray-300 p-4 mb-12" />
-                        <input type="text" name="message" placeholder="Message" className="w-full border-b-2 border-gray-300 p-4 mb-12" />
+                        <textarea rows="7" type="text" name="message" placeholder="Message" className="w-full border-b-2 border-gray-300 p-4 mb-12" />
 
                     {status === "SUCCESS" ? (
 
-                    <div className="bg-green-500 p-4">
+                    <div className="bg-green-500 p-4 my-2 text-white text-center">
                         Thanks for your message. We will reply as soon as possible.
                     </div>
 
@@ -32,7 +32,7 @@ export default class MyForm extends React.Component {
 
                         )}
 
-                    {status === "ERROR" && <div className="bg-red-500 p-4">There was an error.</div>}
+                    {status === "ERROR" && <div className="bg-red-500 p-4 my-2 text-white text-center">There was an error.</div>}
                     
                 </form>
             </div>

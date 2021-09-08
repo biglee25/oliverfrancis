@@ -8,7 +8,7 @@ import { MdEmail } from 'react-icons/md';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-700">
+    <footer className="bg-gray-800">
       <Container>
         <div className="py-28 flex flex-col items-center">
           <div className="pb-6">
