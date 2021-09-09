@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'hero-bg': "url('/images/kitchen.jpg')",
+        'hero-bg': "url('/images/bathroom.webp')",
        }),
        colors: {
         white: '#fff',
