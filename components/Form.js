@@ -28,7 +28,7 @@ export default class MyForm extends React.Component {
 
                     ) : (
 
-                    <button className="bg-black text-white hover:bg-orange hover:text-white transition-all duration-500 py-4 w-full mx-auto">Submit</button>
+                    <button className="bg-gray-800 text-white hover:bg-orange hover:text-white transition-all duration-500 py-4 w-full mx-auto">Submit</button>
 
                         )}
 

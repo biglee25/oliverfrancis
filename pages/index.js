@@ -83,7 +83,7 @@ export default function Index({ page }) {
             <div className="background-left my-4">
               <div className="grid grid-cols-1 md:grid-cols-2 my-12 md:mt-56">
                 <div className="flex flex-col justify-center pb-12 md:px-12">
-                  <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none text-gray-800">{page.title1}</h2>
+                  <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none text-black">{page.title1}</h2>
                   <div dangerouslySetInnerHTML={{ __html: page.content1.html }} className="py-4" />
                     <Link href="/services">
                       <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8">Our Services</button>
@@ -101,7 +101,7 @@ export default function Index({ page }) {
                 </div>
             </div>
             <div className="text-center md:mt-36">
-              <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4 text-gray-800">Our Services</h2>
+              <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4 text-black">Our Services</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 text-center lg:w-3/4 mx-auto">
                 <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-800 text-white">
