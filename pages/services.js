@@ -68,7 +68,7 @@ export default function ({ page }) {
                     <div dangerouslySetInnerHTML={{ __html: page.content1.html }} className="m-auto py-4" />
                 </div>
                 <Link href="/projects">
-                  <button className="bg-orange hover:bg-gray-800 text-white hover:text-white transition-all duration-500 py-4 w-full md:w-56 rounded-full">View our Projects</button>
+                  <button className="bg-orange hover:bg-gray-800 text-white hover:text-white transition-all duration-500 py-4 w-full md:w-56 rounded-lg">View our Projects</button>
                 </Link>
               </div>
               <Image
@@ -101,7 +101,7 @@ export default function ({ page }) {
                   <div dangerouslySetInnerHTML={{ __html: page.content2.html }} className="m-auto py-4" />
               </div>
               <Link href="/projects">
-                <button className="bg-orange hover:bg-gray-800 text-white hover:text-white transition-all duration-500 py-4 w-full md:w-56 rounded-full">View our Projects</button>
+                <button className="bg-orange hover:bg-gray-800 text-white hover:text-white transition-all duration-500 py-4 w-full md:w-56 rounded-lg">View our Projects</button>
               </Link>
             </div>
           </div>

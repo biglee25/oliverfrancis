@@ -72,7 +72,7 @@ export default function Index({ page }) {
                     <h1 className="font-bold leading-snug text-4xl md:text-5xl lg:text-7xl my-4 md:w-3/4 tracking-tight">{page.heroTitle}</h1>
                     <p className="mb-8 md:w-1/2">{page.heroSubtitle}</p>
                     <Link href="/contact">
-                      <button className="bg-orange hover:bg-gray-800 shadow-lg transition-all duration-500 text-white py-4 w-full md:w-96 px-12 md:px-24 rounded-full">Contact us Today</button>
+                      <button className="bg-orange hover:bg-gray-800 shadow-lg transition-all duration-500 text-white py-4 w-full md:w-96 px-12 md:px-24 rounded-lg">Contact us Today</button>
                     </Link>
                 </div>
             </div>
@@ -86,7 +86,7 @@ export default function Index({ page }) {
                   <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none text-black">{page.title1}</h2>
                   <div dangerouslySetInnerHTML={{ __html: page.content1.html }} className="py-4" />
                     <Link href="/services">
-                      <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8 rounded-full">Our Services</button>
+                      <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8 rounded-lg">Our Services</button>
                     </Link>
                   </div>            
                   <div>
@@ -110,7 +110,7 @@ export default function Index({ page }) {
                     <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle1}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent1.html }} className="py-4" />
                     <Link href="/services">
-                      <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4 rounded-full">Find out More</button>
+                      <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4 rounded-lg">Find out More</button>
                     </Link>
                 </div>
                 <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-800 text-white shadow-lg rounded-lg">
@@ -118,7 +118,7 @@ export default function Index({ page }) {
                     <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle2}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent2.html }} className="py-4" />
                     <Link href="/services">
-                      <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4 rounded-full">Find out More</button>
+                      <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4 rounded-lg">Find out More</button>
                     </Link>
                 </div>
             </div>

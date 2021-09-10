@@ -20,7 +20,7 @@ export default function PostPreview({
         </div>
         <p className="mb-4 text-lg leading-relaxed font-normal">{excerpt}</p>
           <Link href={`/posts/${slug}`}>
-            <button className="bg-orange hover:bg-black transition-all duration-500 py-4 w-full md:w-56 mx-auto text-white hover:text-white rounded-full">Explore</button>
+            <button className="bg-orange hover:bg-black transition-all duration-500 py-4 w-full md:w-56 mx-auto text-white hover:text-white rounded-lg">Explore</button>
           </Link>
       </div>
     </div>
