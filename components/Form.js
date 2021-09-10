@@ -14,7 +14,7 @@ export default class MyForm extends React.Component {
     const { status } = this.state
     return (
             <div>
-                <form onSubmit={this.submitForm} action="https://formspree.io/f/mleaavnj" method="POST">
+                <form onSubmit={this.submitForm} action="https://formspree.io/f/mayaagdo" method="POST">
                         <input type="name" name="name" placeholder="Name" className="w-full border-b-2 border-gray-300 p-4 mb-12" />
                         <input type="phone" name="phone" placeholder="Phone" className="w-full border-b-2 border-gray-300 p-4 mb-12" />
                         <input type="email" name="email" placeholder="Email" className="w-full border-b-2 border-gray-300 p-4 mb-12" />
@@ -28,7 +28,7 @@ export default class MyForm extends React.Component {
 
                     ) : (
 
-                    <button className="bg-gray-800 text-white hover:bg-orange hover:text-white transition-all duration-500 py-4 w-full mx-auto">Submit</button>
+                    <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full mx-auto rounded-full">Submit</button>
 
                         )}
 

@@ -7,6 +7,7 @@ export default function CoverImage({ title, url, slug }) {
       height={1000}
       alt={`Cover Image for ${title}`}
       src={url}
+      className="rounded-t-lg"
     />
   )
 
