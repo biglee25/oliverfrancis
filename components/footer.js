@@ -23,12 +23,14 @@ export default function Footer() {
           © {new Date().getFullYear()} { CMS_NAME}
           </h3>
           <div className="py-4">
-            <FaPhoneSquare size="2rem" className="mx-auto mb-4 md:mb-8 text-orange" />
-            <a href="tel:01457 511987" className="text-white">01457 511987</a> 
+          <a href="tel:01457 511987" className="text-white">
+            <FaPhoneSquare size="2rem" className="mx-auto mb-4 text-orange" />
+            01457 511987</a> 
           </div>
           <div className="py-4">
-            <MdEmail size="2rem" className="mx-auto mb-4 md:mb-8 text-orange" />
-            <a href="mailto:sales@oliverfrancisinteriors.co.uk" className="text-white">sales@oliverfrancisinteriors.co.uk</a>
+          <a href="mailto:sales@oliverfrancisinteriors.co.uk" className="text-white">
+            <MdEmail size="2rem" className="mx-auto mb-4 text-orange" />
+            sales@oliverfrancisinteriors.co.uk</a>
           </div>
           <div className="text-gray-400 hover:text-gray-300 flex flex-col justify-center items-center lg:pl-4  mt-12">
             <a href="https://invadedbypixels.com">Website by Invaded by Pixels</a>
