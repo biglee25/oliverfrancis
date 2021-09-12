@@ -4,6 +4,7 @@ import { CMS_NAME } from '../lib/constants'
 import Image from 'next/image'
 import { FaPhoneSquare } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { FaFacebookSquare } from 'react-icons/fa';
 
 
 export default function Footer() {
@@ -31,6 +32,11 @@ export default function Footer() {
           <a href="mailto:sales@oliverfrancisinteriors.co.uk" className="text-white">
             <MdEmail size="2rem" className="mx-auto mb-4 text-orange" />
             sales@oliverfrancisinteriors.co.uk</a>
+          </div>
+          <div className="py-4">
+          {/* <a className="text-white"> */}
+            <FaFacebookSquare size="2rem" className="mx-auto mb-4 text-orange" />
+            {/* sales@oliverfrancisinteriors.co.uk</a> */}
           </div>
           <div className="text-gray-400 hover:text-gray-300 flex flex-col justify-center items-center lg:pl-4  mt-12">
             <a href="https://invadedbypixels.com">Website by Invaded by Pixels</a>
