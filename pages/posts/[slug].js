@@ -17,7 +17,7 @@ export default function Post({ post, morePosts, preview }) {
   }
 
   return (
-    <>
+    <div className="mt-32 md:mt-40">
       <Container>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -63,7 +63,7 @@ export default function Post({ post, morePosts, preview }) {
           </>
         )}
       </Container>
-    </>
+    </div>
   )
 }
 
