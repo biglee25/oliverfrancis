@@ -34,13 +34,13 @@ export default function Footer() {
             sales@oliverfrancisinteriors.co.uk</a>
           </div>
           <div className="py-4">
-          {/* <a className="text-white"> */}
+          <a href="https://www.facebook.com/oliverfrancisinteriors" target="_blank" className="text-white">
             <FaFacebookSquare size="2rem" className="mx-auto mb-4 text-orange" />
-            {/* sales@oliverfrancisinteriors.co.uk</a> */}
+            oliverfrancisinteriors</a>
           </div>
-          <div className="text-gray-400 hover:text-gray-300 flex flex-col justify-center items-center lg:pl-4  mt-12">
+          {/* <div className="text-gray-400 hover:text-gray-300 flex flex-col justify-center items-center lg:pl-4  mt-12">
             <a href="https://invadedbypixels.com">Website by Invaded by Pixels</a>
-          </div>
+          </div> */}
         </div>
       </Container>
     </footer>

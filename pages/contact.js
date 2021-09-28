@@ -7,6 +7,7 @@ import { CMS_NAME } from '../lib/constants'
 
 import { FaPhoneSquare } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { FaFacebookSquare } from 'react-icons/fa';
 
 
 
@@ -30,17 +31,23 @@ export default function Contact() {
                                 <Form />
                         </div>
                         <div className="text-center order-1 md:order-2">
-                            <div className="shadow-lg py-16 my-4 rounded-lg bg-gray-800 text-white">
+                            <div className="shadow-lg py-12 my-4 rounded-lg bg-gray-800 text-white">
                                 <h2 className="text-2xl font-bold pb-8">Contact us by phone</h2>
                                 <a href="tel:01457 511987" className="font-bold">
                                 <FaPhoneSquare size="4rem" className="mx-auto mb-4 text-orange" />
                                     01457 511987</a> 
                             </div>
-                            <div className="shadow-lg py-16 my-4 rounded-lg bg-gray-800 text-white">
+                            <div className="shadow-lg py-12 my-4 rounded-lg bg-gray-800 text-white">
                                 <h2 className="text-2xl font-bold pb-8">Contact us by email</h2>
                                 <a href="mailto:sales@oliverfrancisinteriors.co.uk"className="font-bold">
                                 <MdEmail size="4rem" className="mx-auto mb-4 text-orange" />
                                     sales@oliverfrancisinteriors.co.uk</a>
+                            </div>
+                            <div className="shadow-lg py-12 my-4 rounded-lg bg-gray-800 text-white">
+                                <h2 className="text-2xl font-bold pb-8">Find us on Facebook</h2>
+                                <a href="https://www.facebook.com/oliverfrancisinteriors" target="_blank" className="font-bold">
+                                <FaFacebookSquare size="4rem" className="mx-auto mb-4 text-orange" />
+                                    oliverfrancisinteriors</a>
                             </div>
                         </div>
                     </div>
