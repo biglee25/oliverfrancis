@@ -1,5 +1,4 @@
 import Container from '../components/container'
-import Layout from '../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import { CMS_NAME } from '../lib/constants'
@@ -8,7 +7,7 @@ import { FaBath } from 'react-icons/fa';
 
 import Link from 'next/link'
 
-import Form from '../components/Form'
+import Accordion from 'components/accordion'
 
 
 import { GraphQLClient } from 'graphql-request';
@@ -122,6 +121,12 @@ export default function Index({ page }) {
                 </div>
             </div>
           </Container>
+          <div className="mb-24">
+          <div className="text-center md:mt-24">
+              <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4 text-black">FAQ's</h2>
+            </div>
+          <Accordion />
+          </div>
     </>
   )
 }
