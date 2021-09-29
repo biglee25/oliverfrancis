@@ -1,9 +1,11 @@
-import { Disclosure } from '@headlessui/react'
+import { Disclosure, Transition } from '@headlessui/react'
 import { ChevronUpIcon } from '@heroicons/react/solid'
 
 import Container from './container'
 
-export default function Accordion() {
+
+
+export default function Accordion({page}) {
   return (
       <Container>
         <div className="md:w-3/4 m-auto px-4 pt-16">
@@ -11,34 +13,52 @@ export default function Accordion() {
                 <Disclosure>
                 {({ open }) => (
                     <>
-                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-gray-800 rounded-lg hover:bg-orange focus:outline-none focus-visible:ring focus-visible:ring-gray-800 focus-visible:ring-opacity-75">
-                        <span>Question 1</span>
+                    <Disclosure.Button className="flex justify-between w-full px-2 py-2 font-medium text-left text-black border-gray-800 border-b-2 focus:outline-none">
+                        <span>{page.questionTitle1}</span>
                         <ChevronUpIcon
                         className={`${
                             open ? 'transform rotate-180' : ''
-                        } w-5 h-5 text-white`}
+                        } w-5 h-5 text-orange`}
                         />
                     </Disclosure.Button>
+                    <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                    >
                     <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                        Answer 1
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu sem magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mi id risus vestibulum volutpat sodales et justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla tempus congue urna, vitae sagittis purus posuere in. Morbi nec lobortis leo.
                     </Disclosure.Panel>
+                    </Transition>
                     </>
                 )}
                 </Disclosure>
-                <Disclosure as="div" className="mt-2">
+                <Disclosure as="div" className="mt-2 ">
                 {({ open }) => (
                     <>
-                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-gray-800 rounded-lg hover:bg-orange focus:outline-none focus-visible:ring focus-visible:ring-gray-800 focus-visible:ring-opacity-75">
+                    <Disclosure.Button className="flex justify-between w-full px-2 py-2 font-medium text-left text-black border-gray-800 border-b-2 focus:outline-none">
                         <span>Question 2</span>
                         <ChevronUpIcon
                         className={`${
                             open ? 'transform rotate-180' : ''
-                        } w-5 h-5 text-white`}
+                        } w-5 h-5 text-orange`}
                         />
                     </Disclosure.Button>
+                    <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                    >
                     <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                        Answer 2
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu sem magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mi id risus vestibulum volutpat sodales et justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla tempus congue urna, vitae sagittis purus posuere in. Morbi nec lobortis leo.
                     </Disclosure.Panel>
+                    </Transition>
                     </>
                 )}
                 </Disclosure>

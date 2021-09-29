@@ -7,7 +7,9 @@ import { FaBath } from 'react-icons/fa';
 
 import Link from 'next/link'
 
-import Accordion from 'components/accordion'
+import { Disclosure, Transition } from '@headlessui/react'
+import { ChevronUpIcon } from '@heroicons/react/solid'
+
 
 
 import { GraphQLClient } from 'graphql-request';
@@ -38,6 +40,26 @@ export async function getStaticProps() {
         }
         cardTitle2
         cardContent2 {
+          html
+        }
+        questionTitle1 
+        questionContent1 {
+          html
+        }
+        questionTitle2 
+        questionContent2 {
+          html
+        }
+        questionTitle3 
+        questionContent3 {
+          html
+        }
+        questionTitle4 
+        questionContent4 {
+          html
+        }
+        questionTitle5 
+        questionContent5 {
           html
         }
       }
@@ -123,9 +145,144 @@ export default function Index({ page }) {
           </Container>
           <div className="mb-24">
           <div className="text-center md:mt-24">
-              <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4 text-black">FAQ's</h2>
+              <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4 text-black">Frequently Asked Questions</h2>
             </div>
-          <Accordion />
+            <Container>
+              <div className="md:w-3/4 m-auto px-4 pt-16">
+                  <div className="w-full p-2 mx-auto bg-white rounded-2xl">
+                      <Disclosure>
+                      {({ open }) => (
+                          <>
+                          <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
+                              <span>{page.questionTitle1}</span>
+                              <ChevronUpIcon
+                              className={`${
+                                  open ? 'transform rotate-180' : ''
+                              } w-5 h-5 text-orange`}
+                              />
+                          </Disclosure.Button>
+                          <Transition
+                              enter="transition duration-100 ease-out"
+                              enterFrom="transform scale-95 opacity-0"
+                              enterTo="transform scale-100 opacity-100"
+                              leave="transition duration-75 ease-out"
+                              leaveFrom="transform scale-100 opacity-100"
+                              leaveTo="transform scale-95 opacity-0"
+                          >
+                          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                            <div dangerouslySetInnerHTML={{ __html: page.questionContent1.html }} className="py-4" />
+                          </Disclosure.Panel>
+                          </Transition>
+                          </>
+                      )}
+                      </Disclosure>
+                      <Disclosure as="div" className="mt-2 ">
+                      {({ open }) => (
+                          <>
+                          <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
+                              <span>{page.questionTitle2}</span>
+                              <ChevronUpIcon
+                              className={`${
+                                  open ? 'transform rotate-180' : ''
+                              } w-5 h-5 text-orange`}
+                              />
+                          </Disclosure.Button>
+                          <Transition
+                              enter="transition duration-100 ease-out"
+                              enterFrom="transform scale-95 opacity-0"
+                              enterTo="transform scale-100 opacity-100"
+                              leave="transition duration-75 ease-out"
+                              leaveFrom="transform scale-100 opacity-100"
+                              leaveTo="transform scale-95 opacity-0"
+                          >
+                          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                            <div dangerouslySetInnerHTML={{ __html: page.questionContent2.html }} className="py-4" />
+                          </Disclosure.Panel>
+                          </Transition>
+                          </>
+                      )}
+                      </Disclosure>
+                      <Disclosure as="div" className="mt-2 ">
+                      {({ open }) => (
+                          <>
+                          <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
+                              <span>{page.questionTitle3}</span>
+                              <ChevronUpIcon
+                              className={`${
+                                  open ? 'transform rotate-180' : ''
+                              } w-5 h-5 text-orange`}
+                              />
+                          </Disclosure.Button>
+                          <Transition
+                              enter="transition duration-100 ease-out"
+                              enterFrom="transform scale-95 opacity-0"
+                              enterTo="transform scale-100 opacity-100"
+                              leave="transition duration-75 ease-out"
+                              leaveFrom="transform scale-100 opacity-100"
+                              leaveTo="transform scale-95 opacity-0"
+                          >
+                          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                            <div dangerouslySetInnerHTML={{ __html: page.questionContent3.html }} className="py-4" />
+                          </Disclosure.Panel>
+                          </Transition>
+                          </>
+                      )}
+                      </Disclosure>
+                      <Disclosure as="div" className="mt-2 ">
+                      {({ open }) => (
+                          <>
+                          <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
+                              <span>{page.questionTitle4}</span>
+                              <ChevronUpIcon
+                              className={`${
+                                  open ? 'transform rotate-180' : ''
+                              } w-5 h-5 text-orange`}
+                              />
+                          </Disclosure.Button>
+                          <Transition
+                              enter="transition duration-100 ease-out"
+                              enterFrom="transform scale-95 opacity-0"
+                              enterTo="transform scale-100 opacity-100"
+                              leave="transition duration-75 ease-out"
+                              leaveFrom="transform scale-100 opacity-100"
+                              leaveTo="transform scale-95 opacity-0"
+                          >
+                          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                            <div dangerouslySetInnerHTML={{ __html: page.questionContent4.html }} className="py-4" />
+                          </Disclosure.Panel>
+                          </Transition>
+                          </>
+                      )}
+                      </Disclosure>
+                      <Disclosure as="div" className="mt-2 ">
+                      {({ open }) => (
+                          <>
+                          <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
+                              <span>{page.questionTitle5}</span>
+                              <ChevronUpIcon
+                              className={`${
+                                  open ? 'transform rotate-180' : ''
+                              } w-5 h-5 text-orange`}
+                              />
+                          </Disclosure.Button>
+                          <Transition
+                              enter="transition duration-100 ease-out"
+                              enterFrom="transform scale-95 opacity-0"
+                              enterTo="transform scale-100 opacity-100"
+                              leave="transition duration-75 ease-out"
+                              leaveFrom="transform scale-100 opacity-100"
+                              leaveTo="transform scale-95 opacity-0"
+                          >
+                          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                            <div dangerouslySetInnerHTML={{ __html: page.questionContent5.html }} className="py-4" />
+                          </Disclosure.Panel>
+                          </Transition>
+                          </>
+                      )}
+                      </Disclosure>
+                  </div>
+              </div>
+            </Container>
           </div>
     </>
   )
