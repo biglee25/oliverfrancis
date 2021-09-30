@@ -16,7 +16,7 @@ import { GraphQLClient } from 'graphql-request';
 
 
 export async function getStaticProps() {
-  const graphcms = new GraphQLClient((process.env.GRAPHCMS_PROJECT_API))
+const graphcms = new GraphQLClient((process.env.GRAPHCMS_PROJECT_API))
   
   const { page } = await graphcms.request(
     `
@@ -126,7 +126,7 @@ export default function Index({ page }) {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 text-center lg:w-3/4 mx-auto">
                 <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-800 text-white shadow-lg rounded-lg">
-                  <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
+                <FaBath size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                     <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle1}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent1.html }} className="py-4" />
                     <Link href="/services">
@@ -134,7 +134,7 @@ export default function Index({ page }) {
                     </Link>
                 </div>
                 <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-800 text-white shadow-lg rounded-lg">
-                  <FaBath size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
+                  <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
                     <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle2}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent2.html }} className="py-4" />
                     <Link href="/services">
