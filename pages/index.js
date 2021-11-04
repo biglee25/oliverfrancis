@@ -210,7 +210,7 @@ export default function Index({ page }) {
                               <ChevronDownIcon
                               className={`${
                                   open ? 'transform rotate-180' : ''
-                              } w-5 h-5 text-gray-900`}
+                              } w-5 h-5 text-gray-700`}
                               />
                           </Disclosure.Button>
                           <Transition
