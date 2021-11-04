@@ -8,7 +8,7 @@ import { FaBath } from 'react-icons/fa';
 import Link from 'next/link'
 
 import { Disclosure, Transition } from '@headlessui/react'
-import { ChevronUpIcon } from '@heroicons/react/solid'
+import { ChevronDownIcon } from '@heroicons/react/solid'
 
 
 
@@ -155,10 +155,10 @@ export default function Index({ page }) {
                           <>
                           <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
                               <span>{page.questionTitle1}</span>
-                              <ChevronUpIcon
+                              <ChevronDownIcon
                               className={`${
                                   open ? 'transform rotate-180' : ''
-                              } w-5 h-5 text-orange`}
+                              } w-5 h-5 text-gray-900`}
                               />
                           </Disclosure.Button>
                           <Transition
@@ -181,10 +181,10 @@ export default function Index({ page }) {
                           <>
                           <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
                               <span>{page.questionTitle2}</span>
-                              <ChevronUpIcon
+                              <ChevronDownIcon
                               className={`${
                                   open ? 'transform rotate-180' : ''
-                              } w-5 h-5 text-orange`}
+                              } w-5 h-5 text-gray-900`}
                               />
                           </Disclosure.Button>
                           <Transition
@@ -207,10 +207,10 @@ export default function Index({ page }) {
                           <>
                           <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
                               <span>{page.questionTitle3}</span>
-                              <ChevronUpIcon
+                              <ChevronDownIcon
                               className={`${
                                   open ? 'transform rotate-180' : ''
-                              } w-5 h-5 text-orange`}
+                              } w-5 h-5 text-gray-900`}
                               />
                           </Disclosure.Button>
                           <Transition
@@ -233,10 +233,10 @@ export default function Index({ page }) {
                           <>
                           <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
                               <span>{page.questionTitle4}</span>
-                              <ChevronUpIcon
+                              <ChevronDownIcon
                               className={`${
                                   open ? 'transform rotate-180' : ''
-                              } w-5 h-5 text-orange`}
+                              } w-5 h-5 text-gray-900`}
                               />
                           </Disclosure.Button>
                           <Transition
@@ -259,10 +259,10 @@ export default function Index({ page }) {
                           <>
                           <Disclosure.Button className="flex justify-between w-full px-2 py-6 font-medium text-left text-black hover:text-orange border-gray-800 border-b-2 focus:outline-none">
                               <span>{page.questionTitle5}</span>
-                              <ChevronUpIcon
+                              <ChevronDownIcon
                               className={`${
                                   open ? 'transform rotate-180' : ''
-                              } w-5 h-5 text-orange`}
+                              } w-5 h-5 text-gray-900`}
                               />
                           </Disclosure.Button>
                           <Transition
