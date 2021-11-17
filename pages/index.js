@@ -2,6 +2,7 @@ import Container from '../components/container'
 import Head from 'next/head'
 import Image from 'next/image'
 import { CMS_NAME } from '../lib/constants'
+import { MdViewQuilt } from "react-icons/md";
 import { MdKitchen } from "react-icons/md";
 import { FaBath } from 'react-icons/fa';
 
@@ -40,6 +41,10 @@ const graphcms = new GraphQLClient((process.env.GRAPHCMS_PROJECT_API))
         }
         cardTitle2
         cardContent2 {
+          html
+        }
+        cardTitle3
+        cardContent3 {
           html
         }
         questionTitle1 
@@ -121,23 +126,31 @@ export default function Index({ page }) {
                   </div>
                 </div>
             </div>
-            <div className="text-center md:mt-36">
+            <div className="text-center md:mt-48">
               <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4 text-black">Our Services</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 text-center lg:w-3/4 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 my-12 text-center  mx-auto">
                 <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-800 text-white shadow-lg rounded-lg">
-                <FaBath size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
-                    <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle1}</h2>
+                <MdViewQuilt size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
+                    <h2 className="text-6xl md:text-4xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle1}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent1.html }} className="py-4" />
                     <Link href="/services">
                       <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4 rounded-lg">Find out More</button>
                     </Link>
                 </div>
                 <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-800 text-white shadow-lg rounded-lg">
-                  <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
-                    <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle2}</h2>
+                <FaBath size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
+                    <h2 className="text-6xl md:text-4xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle2}</h2>
                     <div dangerouslySetInnerHTML={{ __html: page.cardContent2.html }} className="py-4" />
-                    <Link href="/services">
+                    <Link href="/services#bathrooms">
+                      <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4 rounded-lg">Find out More</button>
+                    </Link>
+                </div>
+                <div className="flex flex-col justify-between p-4 md:p-12 bg-gray-800 text-white shadow-lg rounded-lg">
+                  <MdKitchen size="3rem" className="mx-auto mb-4 md:mb-8 text-orange" />
+                    <h2 className="text-6xl md:text-4xl font-bold tracking-tighter leading-tight md:leading-none">{page.cardTitle3}</h2>
+                    <div dangerouslySetInnerHTML={{ __html: page.cardContent3.html }} className="py-4" />
+                    <Link href="/services#kitchens">
                       <button className="bg-orange hover:bg-white hover:text-black transition-all duration-500 py-4 w-full md:w-56 mx-auto mt-12 md:mt-4 rounded-lg">Find out More</button>
                     </Link>
                 </div>

@@ -30,7 +30,7 @@ export default function Contact() {
                             <h2 className="text-2xl font-bold pb-8 text-center text-black">Fill in the form and we will get right back to you.</h2>
                                 <Form />
                         </div>
-                        <div className="text-center order-1 md:order-2">
+                        <div className="text-center order-1 md:order-2 flex flex-col justify-between">
                             <div className="shadow-lg py-12 my-4 rounded-lg bg-gray-800 text-white">
                                 <h2 className="text-2xl font-bold pb-8">Contact us by phone</h2>
                                 <a href="tel:01457 511987" className="font-bold">
