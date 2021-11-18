@@ -1,4 +1,4 @@
-import { useState} from 'react'
+import { useState, useEffect} from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,17 +13,16 @@ export default function Navbar({ fixed }) {
 
     return (
       <>
-        <nav expanded={expanded} className="fixed top-0 w-full h-auto flex flex-wrap items-center justify-between p-2 bg-gray-800 z-50 shadow-md">
-          <div className="container px-2 mx-auto flex flex-wrap items-center justify-between">
+        <nav expanded={expanded} className="static h-auto px-2 top-0 w-full flex flex-wrap items-center justify-between bg-gray-800 z-50 shadow-md">
+          <div className="container px-2 py-1 mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
               <Link href="/">
                 <a>
                 <Image
                   src={logo}
                   alt="Oliver Francis Interiors"
-                  width={150}
-                  height={100}
-                  layout="fixed"
+                  width={125}
+                  height={80}
                 />
                 </a>
               </Link>
@@ -35,22 +34,22 @@ export default function Navbar({ fixed }) {
               className={"lg:flex flex-grow items-center justify-center m-auto h-auto transition duration-500" + (expanded ? " flex  " : " hidden")}>
               <ul className="flex flex-col align-center justify-center lg:flex-row list-none lg:ml-auto h-5/6 md:h-auto py-12">
                 <li>
-                  <a className="px-3 py-2 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out active:bg-black" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
+                  <a className="px-3 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out active:bg-black" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
                   <Link href="/" className="text-white hover:bg-orange px-4 py-2 transition-all duration-500">Home</Link>
                   </a>
                 </li>
                 <li>
-                  <a className="px-3 py-2 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out active:bg-black" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
+                  <a className="px-3 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out active:bg-black" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
                   <Link href="/services" className="text-white hover:bg-orange px-4 py-2 transition-all duration-500">Services</Link>
                   </a>
                 </li>
                 <li>
-                  <a className="px-3 py-2 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
+                  <a className="px-3 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
                   <Link href="/projects" className="text-white hover:bg-orange px-4 py-2 transition-all duration-500">Projects</Link>
                   </a>
                 </li>
                 <li>
-                  <a className="px-3 py-2 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
+                  <a className="px-3 flex items-center justify-center text-2xl md:text-xs uppercase leading-snug text-white hover:text-orange hover:transition hover:duration-500 hover:ease-in-out" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
                   <Link href="/contact" className="text-white hover:bg-orange px-4 py-2 transition-all duration-500">Contact</Link>
                   </a>
                 </li>
