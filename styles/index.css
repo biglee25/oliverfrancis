@@ -52,14 +52,3 @@
   border-radius: 0 !important;
 }
 
-text-bg {
-  background: #fff;
-}
-
-@media (max-width: 768px) {
-  .text-bg {
-    background: #f2f2f2;
-    width: 75%;
-    padding: 1rem;
-  }
-}

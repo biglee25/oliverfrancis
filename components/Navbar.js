@@ -1,4 +1,4 @@
-import { useState, useEffect} from 'react'
+import { useState} from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,8 +13,8 @@ export default function Navbar({ fixed }) {
 
     return (
       <>
-        <nav expanded={expanded} className="static h-auto px-2 top-0 w-full flex flex-wrap items-center justify-between bg-gray-800 z-50 shadow-md">
-          <div className="container px-2 py-1 mx-auto flex flex-wrap items-center justify-between">
+        <nav expanded={expanded} className="fixed top-0 w-full h-auto flex flex-wrap items-center justify-between px-2 md:p-0 bg-gray-800 z-50 shadow-md">
+          <div className="container px-2 mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
               <Link href="/">
                 <a>
@@ -23,6 +23,7 @@ export default function Navbar({ fixed }) {
                   alt="Oliver Francis Interiors"
                   width={125}
                   height={80}
+                  layout="fixed"
                 />
                 </a>
               </Link>
