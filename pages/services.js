@@ -99,7 +99,7 @@ export default function ({ page }) {
         </div>
       </Container>
       <Container>
-      <div className="my-12 md:my-24 lg:my-80">
+      <div className="mt-12 md:my-24 lg:my-80">
         <div className="background-right">
           <div className="grid grid-cols-1 md:grid-cols-2 my-12 md:mt-56">
             <div className="order-2 md:order-1">
@@ -131,7 +131,7 @@ export default function ({ page }) {
         </div>
       </Container>
       <Container>
-      <div className="my-12 md:my-24 lg:my-80">
+      <div className="mt-24 md:my-24 lg:my-80">
         <div className="background-left">
           <div className="grid grid-cols-1 md:grid-cols-2 my-12 md:mt-56">
             <div className="order-2 md:order-1">
