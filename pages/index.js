@@ -111,10 +111,11 @@ export default function Index({ page }) {
                   <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none text-black">{page.title1}</h2>
                   <div dangerouslySetInnerHTML={{ __html: page.content1.html }} className="py-4" />
                     <Link href="/services">
-                      <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8 rounded-lg">Our Services</button>
+                      <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8 rounded-lg order-3 md:order-2 hidden md:block">Our Services</button>
                     </Link>
                   </div>            
                   <div>
+                  <div className="order-2 md:order-1">
                     <Image
                       src={page.image1.url}
                       width="100%"
@@ -123,6 +124,11 @@ export default function Index({ page }) {
                       className="shadow-lg"
                       className="rounded-lg"
                     />
+                  </div>
+                  <Link href="/services">
+                      <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8 rounded-lg order-3 md:order-2 block md:hidden">Our Services</button>
+                    </Link>
+
                   </div>
                 </div>
             </div>
