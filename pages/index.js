@@ -114,7 +114,6 @@ export default function Index({ page }) {
                       <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8 rounded-lg order-3 md:order-2 hidden md:block">Our Services</button>
                     </Link>
                   </div>            
-                  <div>
                   <div className="order-2 md:order-1">
                     <Image
                       src={page.image1.url}
@@ -124,11 +123,6 @@ export default function Index({ page }) {
                       className="shadow-lg"
                       className="rounded-lg"
                     />
-                  </div>
-                  <Link href="/services">
-                      <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8 rounded-lg order-3 md:order-2 block md:hidden">Our Services</button>
-                    </Link>
-
                   </div>
                 </div>
             </div>
