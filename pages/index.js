@@ -110,9 +110,6 @@ export default function Index({ page }) {
                 <div className="flex flex-col justify-center pb-12 md:px-12">
                   <h2 className="text-6xl md:text-4xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none text-black">{page.title1}</h2>
                   <div dangerouslySetInnerHTML={{ __html: page.content1.html }} className="py-4" />
-                    <Link href="/services">
-                      <button className="bg-orange text-white hover:bg-gray-800 hover:text-white transition-all duration-500 py-4 w-full md:w-56 mt-12 md:mt-8 rounded-lg order-3 md:order-2 hidden md:block">Our Services</button>
-                    </Link>
                   </div>            
                   <div className="order-2 md:order-1">
                     <Image
