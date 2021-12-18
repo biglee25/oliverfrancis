@@ -23,6 +23,7 @@ const graphcms = new GraphQLClient((process.env.GRAPHCMS_PROJECT_API))
     `
     query MyQuery {
       page(where: {slug: "home"}) {
+        seo
         id
         heroTitle
         heroSubtitle
@@ -87,7 +88,7 @@ export default function Index({ page }) {
         <Head>
           <title>{CMS_NAME} - Home</title>
           <meta name="description" content="Oliver Francis Interiors are your local kitchen company in Glossop, specialising in kitchen and bathroom design and installation. Call the team today to discuss your ideas."></meta>
-          <meta name="keywords" content="Kitchens, Bathrooms, Fitters, Suppliers, Bespoke"></meta>
+          <meta name="keywords" content={page.seo}></meta>
         </Head>
         <section className="mx-auto w-full">
         <div className="bg-hero-bg bg-cover bg-top mb-12">
