@@ -87,6 +87,7 @@ export default function Index({ page }) {
     <>
         <Head>
           <title>{CMS_NAME} - Home</title>
+          <meta name="google-site-verification" content="Yvir0GKjx0rVsV35Egkg5uwi-qAJ50OVshax8DsVdrg" />
           <meta name="description" content="Oliver Francis Interiors are your local kitchen company in Glossop, specialising in kitchen and bathroom design and installation. Call the team today to discuss your ideas."></meta>
           <meta name="keywords" content={page.seo}></meta>
         </Head>
