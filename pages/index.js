@@ -8,11 +8,6 @@ import { FaBath } from 'react-icons/fa';
 
 import Link from 'next/link'
 
-import { Disclosure, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-
-
-
 import { GraphQLClient } from 'graphql-request';
 
 
@@ -46,26 +41,6 @@ const graphcms = new GraphQLClient((process.env.GRAPHCMS_PROJECT_API))
         }
         cardTitle3
         cardContent3 {
-          html
-        }
-        questionTitle1 
-        questionContent1 {
-          html
-        }
-        questionTitle2 
-        questionContent2 {
-          html
-        }
-        questionTitle3 
-        questionContent3 {
-          html
-        }
-        questionTitle4 
-        questionContent4 {
-          html
-        }
-        questionTitle5 
-        questionContent5 {
           html
         }
       }
@@ -155,7 +130,7 @@ export default function Index({ page }) {
                 </div>
             </div>
           </Container>
-          <div className="mb-24">
+          {/* <div className="mb-24">
           <div className="text-center md:mt-24">
               <h2 className="text-6xl font-bold tracking-tighter leading-tight md:leading-none md:pb-4 text-black">Frequently Asked Questions</h2>
             </div>
@@ -295,7 +270,7 @@ export default function Index({ page }) {
                   </div>
               </div>
             </Container>
-          </div>
+          </div> */}
     </>
   )
 }
