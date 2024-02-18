@@ -76,7 +76,7 @@ export default function Index({ page }) {
                 <p className="mb-8 md:w-1/2">{page.heroSubtitle}</p>
                 <Link href="/contact">
                   <button className="bg-orange hover:bg-gray-800 shadow-lg transition-all duration-500 text-white py-4 w-full md:w-96 px-12 md:px-24 rounded-lg">
-                    Contact us Today
+                    Contact us Today.
                   </button>
                 </Link>
               </div>
