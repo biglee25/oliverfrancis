@@ -28,7 +28,7 @@ export default function Contact() {
             Contact us
           </h2>
           <p className="pb-4 text-center">
-            If you have any questions, please get in touch.
+            If you have any questions, please get in touch
           </p>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 mt-4 items-center">
             <div className="order-2 md:order-1 shadow-lg px-4 py-20 rounded-lg bg-gray-200">
