@@ -15,7 +15,7 @@ export async function getStaticProps() {
     `
     query MyQuery {
       page(where: {slug: "services"}) {
-        seo
+        
         id
         
         image1 {
