@@ -82,7 +82,7 @@ export default function ({ page }) {
               <div className="grid grid-cols-1 md:grid-cols-2 my-12 md:mt-56">
                 <div className="order-2 md:order-1">
                   <Image
-                    src={page.image2.url}
+                    src={page.image2.url?}
                     width="100%"
                     height="100%"
                     layout="responsive"
